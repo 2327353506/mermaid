@@ -22,8 +22,9 @@ public class UserController {
 
 	@RequestMapping(method=RequestMethod.POST)
 	@ResponseBody
-	public ResponseMsg login(){
-		return new ResponseMsg().setData("登录成功");
+	public ResponseMsg login(String username,String password){
+		
+		return new ResponseMsg().setData(userI.login(username,password));
 	}
 
 	
