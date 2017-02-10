@@ -13,10 +13,10 @@
 	 contextInitialized(ServletContextEvent event)初始化方法，在这个方法中可以通过eventgetSer
 	 vletContext().getInitParameter("contextConfigLocation") 来得到context-param 设定的值。 
   -->
-<!--   <context-param>
+   <context-param>
   	<param-name>contextConfigLocation</param-name>
   	<param-value>classpath:spring.xml</param-value>
-  </context-param> -->
+  </context-param> 
   
   <!-- 
   	     设置请求所用的字符集 
@@ -90,7 +90,7 @@
   	<welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
-  <error-page>
+<!--   <error-page>
 	<error-code>404</error-code>
 	<location>404.jsp</location>
   </error-page>
@@ -101,7 +101,7 @@
   <error-page> 
 	<error-code>500</error-code>
 	<location>404.jsp</location>
-  </error-page>
+  </error-page> -->
   
   <!-- 
   	设置session超时时间 
