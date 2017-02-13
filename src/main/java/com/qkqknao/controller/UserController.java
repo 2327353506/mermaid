@@ -24,7 +24,7 @@ public class UserController {
 	@ResponseBody
 	public ResponseMsg login(String username,String password){
 		
-		return new ResponseMsg().setData(userI.login(username,password));
+		return new ResponseMsg().setData(userI.login(username, password));
 	}
 
 	
